@@ -1,0 +1,41 @@
+body {
+    background-color: #ffe6f2;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#cake {
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#cake img {
+    width: 200px;
+    animation: sparkle 1s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+#images-container img {
+    width: 150px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.jump {
+    animation: jump 1s ease-in-out;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+#birthday-text {
+    display: none;
+    font-size: 24px;
+    color: #ff4081;
+}
